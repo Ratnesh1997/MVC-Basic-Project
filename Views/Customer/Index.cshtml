@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Crud1.Models.Customer>
+    <div class="table-responsive">
+    <table class="table table-bordered text-center">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email_Id</th>
+                <th>Mobile</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var my in Model)
+            {
+                <tr>
+                    <td>@my.name</td>
+                    <td>@my.email</td>
+                    <td>@my.mobile</td>
+                    <td>@my.Address</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    </div>
